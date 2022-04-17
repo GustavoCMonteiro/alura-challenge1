@@ -24,7 +24,7 @@ function criptografar() {
   }
 }
 
-// função que é ativada ao clicar no botão de desencriptografar, e faz a deseencriptação
+// função que é ativada ao clicar no botão de descriptografar, e faz a deseencriptação
 function descriptografar() {
   if (input.value != "") {
     textCript = input.value.replace(/enter/g, "e");
