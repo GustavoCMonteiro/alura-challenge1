@@ -1,0 +1,185 @@
+textarea {
+  border: none;
+  resize: none;
+  background-color: transparent;
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  background-image: linear-gradient(
+    to left top,
+    #99d17b,
+    #97cd81,
+    #96c886,
+    #95c48b,
+    #95bf8f
+  );
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  font-weight: 900;
+  color: #4b5842;
+}
+
+.conteudo {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.conteudo-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  height: 500px;
+  padding: 0 20px;
+}
+
+.conteudo-input {
+  font-size: 1.2rem;
+  padding: 30px 50px;
+  color: #4b5842;
+  font-weight: bold;
+}
+
+.conteudo-input::placeholder {
+  color: #6184d8;
+  font-weight: bold;
+}
+
+.conteudo-resposta {
+  background-color: #f3e0ec;
+  grid-row: span 2;
+  font-size: 1.2rem;
+  padding: 30px 50px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.24);
+}
+
+.conteudo-resposta p {
+  color: #6184d8;
+  font-weight: bold;
+}
+
+.texto-copiado {
+  position: absolute;
+  bottom: 70px;
+  right: 55px;
+  padding: 5px 20px;
+  font-size: 0.9rem;
+  background-color: #99d17b;
+  color: black;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: 1px solid black;
+  visibility: hidden;
+}
+
+.conteudo-copiar {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4b5842;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid black;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.conteudo-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-self: end;
+}
+
+.button1,
+.button2 {
+  width: 150px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #4b5842;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.button1:hover,
+.button2:hover,
+.conteudo-copiar:hover {
+  color: black;
+  background-color: #6184d8;
+  transform: scale(1.2);
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 30px 0;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .conteudo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conteudo-buttons {
+    grid-row: 2;
+  }
+
+  .button1:hover,
+  .button2:hover,
+  .conteudo-copiar:hover {
+    transform: scale(1);
+  }
+
+  .texto-copiado {
+    bottom: 27px;
+    right: 130px;
+  }
+}
+
+@media (max-width: 400px) {
+  .button1,
+  .button2 {
+    width: 200px;
+    margin-bottom: 0;
+  }
+
+  .button2 {
+    margin-bottom: 20px;
+  }
+
+  .conteudo-copiar {
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .texto-copiado {
+    bottom: 13px;
+    right: 110px;
+  }
+}

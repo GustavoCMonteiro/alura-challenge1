@@ -15,18 +15,24 @@
 </head>
 
 <body>
-  <div class="fundo">
+  <header>
     <h1>Ferramenta de Criptografia</h1>
-    <div class="container">
-      <textarea class="text" name="texto" id="text" cols="30" rows="5" required autofocus placeholder="digite aqui seu texto em letras minusculas e sem acentos!"></textarea>
-      <span class="button1">Criptografar</span>
-      <span class="button2">Descriptografar</span>
-      <div class="resposta bg-img">
-        <p>aqui saira o seu resultado</p>
-        <span class="copiar">Copiar</span>
+  </header>
+
+  <main class="conteudo">
+    <div class="conteudo-grid">
+      <textarea class="conteudo-input" name="texto" id="text" cols="30" rows="5" autofocus placeholder="digite aqui seu texto em letras minusculas e sem acentos!"></textarea>
+      <div class="conteudo-resposta">
+        <p class="resposta">aqui saira o seu resultado</p>
+        <span class="texto-copiado">Texto Copiado!</span>
+        <span class="conteudo-copiar">Copiar</span>
+      </div>
+      <div class="conteudo-buttons">
+        <span class="button1">Criptografar</span>
+        <span class="button2">Descriptografar</span>
       </div>
     </div>
-  </div>
+  </main>
   <footer>
     <p>Site criado por Gustavo Monteiro</p>
   </footer>
