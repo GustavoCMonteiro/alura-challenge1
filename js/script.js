@@ -19,7 +19,7 @@ function criptografar() {
     textCript = textCript.replace(/u/g, "ufat");
 
     saida.textContent = textCript;
-    copiar.classList.add("show");
+    copiar.classList.add("showbutton");
     input.value = "";
   }
 }
@@ -34,7 +34,7 @@ function descriptografar() {
     textCript = textCript.replace(/ufat/g, "u");
 
     saida.textContent = textCript;
-    copiar.classList.add("show");
+    copiar.classList.add("showbutton");
     input.value = "";
   }
 }
@@ -43,7 +43,7 @@ function descriptografar() {
 function copiarTexto() {
   navigator.clipboard.writeText(saida.textContent);
   copiado.classList.add("show");
-  setTimeout("removerBotao()", 1000);
+  setTimeout("removerBotao()", 2000);
 }
 
 // função que faz o popup "texto copiado" sumir depois de 1 segundo
